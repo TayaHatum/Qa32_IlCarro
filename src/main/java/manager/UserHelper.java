@@ -25,11 +25,7 @@ public class UserHelper extends HelperBase{
     }
 
 
-    public void submit() {
-       // click(By.xpath("//*[text()='Y’alla!']"));
-        click(By.cssSelector("[type='submit']"));
 
-    }
 
     public String checkMessage() {
         new WebDriverWait(wd,5)

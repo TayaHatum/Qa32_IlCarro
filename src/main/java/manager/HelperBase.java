@@ -35,4 +35,10 @@ public class HelperBase {
             e.printStackTrace();
         }
     }
+
+    public void submit() {
+        // click(By.xpath("//*[text()='Y’alla!']"));
+        click(By.cssSelector("[type='submit']"));
+
+    }
 }
