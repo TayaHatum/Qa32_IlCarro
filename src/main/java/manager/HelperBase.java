@@ -3,6 +3,8 @@ package manager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HelperBase {
     WebDriver wd;
@@ -38,6 +40,8 @@ public class HelperBase {
 
     public void submit() {
         // click(By.xpath("//*[text()='Y’alla!']"));
+        new WebDriverWait(wd,10)
+                .until(ExpectedConditions.elementToBeClickable(wd.findElement(By.cssSelector("[type='submit']"))));
         click(By.cssSelector("[type='submit']"));
 
     }

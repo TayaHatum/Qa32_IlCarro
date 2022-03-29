@@ -1,13 +1,17 @@
 package tests;
 
 import models.Car;
+import models.User;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class AddNewCarTests extends TestBase {
     @BeforeMethod
     public void preCondition() {
-        // if loginBTN --> login
+        if(!app.user().isLogOutPresent()){
+            app.user().login(new User().withEmail("noa@gmail.com").withPassword("Nnoa12345$"));
+        }
     }
 
     @Test
@@ -36,8 +40,10 @@ public class AddNewCarTests extends TestBase {
 
         app.car().openCarForm();
         app.car().fillCarForm(car);
-       // app.car().attachPhoto("");
-        //app.car().submit();
+        app.car().attachPhoto("/Users/tayahatum/Qa32/Qa32_IlCarro/auto2.jpeg");
+        app.car().submit();
+
+        Assert.assertTrue(app.car().isCarAdded());
 
 
     }
