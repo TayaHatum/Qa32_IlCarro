@@ -10,6 +10,7 @@ public class ApplicationManager {
     WebDriver wd;
     UserHelper userHelper;
     CarHelper car;
+    HelperSearch search;;
 
 
     public void init(){
@@ -19,6 +20,7 @@ public class ApplicationManager {
         wd.navigate().to("https://ilcarro.xyz/");
         userHelper = new UserHelper(wd);
         car = new CarHelper(wd);
+        search = new HelperSearch(wd);
 
 
 
@@ -34,5 +36,9 @@ public class ApplicationManager {
 
     public CarHelper car() {
         return car;
+    }
+
+    public HelperSearch search() {
+        return search;
     }
 }
