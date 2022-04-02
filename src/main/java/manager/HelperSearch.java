@@ -9,7 +9,7 @@ public class HelperSearch extends HelperBase{
 
     public void searchCurrentMonth(String city, String dataFrom, String dataTo) {
 
-        typeCity(city);
+       // typeCity(city);
         selectPeriod(dataFrom,dataTo);
     }
 
@@ -17,12 +17,12 @@ public class HelperSearch extends HelperBase{
         // "04/10/2022","04/20/2022" ---> 10 -20
         String[] from=dataFrom.split("/"); //>>>> [04][10][2022] from.get(1)
 
-        click(); ---->10
-         click () --->20
+       // click(); ---->10
+        // click () --->20
     }
 
     public void searchCurrentMonthInPast(String city, String dataFrom, String dataTo) {
-        typeCity(city);
-        typePerionInPast(dataFrom,dataTo); === >>>>> sendKey("2/10/2022 - 4/20/2022");
+       // typeCity(city);
+       // typePerionInPast(dataFrom,dataTo); === >>>>> sendKey("2/10/2022 - 4/20/2022");
     }
 }
