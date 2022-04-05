@@ -15,11 +15,12 @@ public class SearchTests extends TestBase{
 
 
     @Test
-    public void searchCurrentMonthInPast(){
-        app.search().searchCurrentMonthInPast("Tel Aviv","2/01/2022","04/20/2022");
-        app.search().submit();
+    public void searchPeriodInPast(){
+        app.search().searchPeriodInPast("Tel Aviv","2/01/2022","04/20/2022");
+        app.search().submitWithoutWait();
 
-        Assert.assertTrue(app.user().isYallaButtonNotActive());
+        Assert.assertFalse(app.user().isYallaButtonNotActive());
+        Assert.assertTrue(app.search().isPeriodInPast());
     }
 
     @Test
