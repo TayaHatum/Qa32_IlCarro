@@ -21,4 +21,10 @@ public class SearchTests extends TestBase{
 
         Assert.assertTrue(app.user().isYallaButtonNotActive());
     }
+
+    @Test
+    public void searchAnyPeriod(){
+        app.search().searchAnyPeriod("Tel Aviv","01/05/2023","03/15/2023");
+        app.search().submit();
+    }
 }
