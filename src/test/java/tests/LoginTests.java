@@ -13,11 +13,13 @@ public class LoginTests extends TestBase{
 
         if(app.user().isLogOutPresent()){
             app.user().logout();
+            logger.info("Test needs logout");
         }
     }
 
     @Test
     public void loginSuccess(){
+        logger.info("The test starts with data [noa@gmail.com] & [Nnoa12345$]" );
 
         app.user().openLoginForm();
         app.user().fillLoginForm("noa@gmail.com","Nnoa12345$");

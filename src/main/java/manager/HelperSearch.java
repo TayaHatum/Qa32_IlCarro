@@ -1,6 +1,7 @@
 package manager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -52,7 +53,22 @@ public class HelperSearch extends HelperBase{
     }
 
     private void typePeriodInPast(String dataFrom, String dataTo) {
-        //wd.findElement(By.id("dates")).sendKeys(dataFrom + " - "+dataTo);
+WebElement el = wd.findElement(By.id("dates"));
+
+// os?
+        String  osname = System.getProperty("os.name");
+        if (osname.startsWith("Mac")) {
+            System.out.println(osname);
+
+            el.sendKeys(Keys.COMMAND,"a");
+        }else {
+            el.sendKeys(Keys.CONTROL,"a");
+        }
+        el.sendKeys(Keys.DELETE);
+        pause(2000);
+
+
+
         type(By.id("dates"),dataFrom + " - "+dataTo);
         click(By.cssSelector(".cdk-overlay-container"));
 
@@ -146,4 +162,8 @@ public class HelperSearch extends HelperBase{
         return error.equals("You can't pick date before today");
     }
 
+    public void returnToHomePage() {
+        pause(2000);
+        click(By.cssSelector(".header a[href='/']"));
+    }
 }

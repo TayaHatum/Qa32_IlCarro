@@ -1,6 +1,7 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class SearchTests extends TestBase{
@@ -10,6 +11,7 @@ public class SearchTests extends TestBase{
         app.search().searchCurrentMonth("Tel Aviv","4/10/2022","4/20/2022");
         app.search().submit();
        // Assert.assertTrue(app.search().isListOfCarsAppeared());
+
     }
 
 
@@ -27,5 +29,9 @@ public class SearchTests extends TestBase{
     public void searchAnyPeriod(){
         app.search().searchAnyPeriod("Tel Aviv","01/05/2023","03/15/2023");
         app.search().submit();
+    }
+    @AfterMethod
+    public void postCondition(){
+        app.search().returnToHomePage();
     }
 }
