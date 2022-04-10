@@ -72,6 +72,8 @@ WebElement el = wd.findElement(By.id("dates"));
         type(By.id("dates"),dataFrom + " - "+dataTo);
         click(By.cssSelector(".cdk-overlay-container"));
 
+        takeScreenShot("src/test/screenshots/screen.png");
+
     }
 
     public void searchAnyPeriod(String city, String dataFrom, String dataTo) {

@@ -1,0 +1,7 @@
+11:26:18.373  INFO  manager.ApplicationManager - All tests start in ChromeDriver
+11:26:18.464  INFO  manager.ApplicationManager - All tests start in 'ChromeDriver'
+11:26:24.124  INFO  tests.TestBase - Start test --->public void tests.AddNewCarTests.addNewCarSuccess()
+11:26:31.054  INFO  tests.TestBase - Test start with user -->  User{name='null', lastName='null', email='noa@gmail.com', password='Nnoa12345$', phone='null'}
+11:26:31.058  INFO  tests.TestBase -  'Car Reg number' 100-2230391
+11:26:31.063  INFO  tests.TestBase - Add car --->Car(address=Tel Aviv, Israel, make=BMW, model=M5, year=2022, engine=2.5, fuel=Petrol, gear=MT, wD=AWD, doors=5, seats=4, clasS=C, fuelConsumption=6.5, carRegNumber=100-22-30391, price=65, distanceIncluded=500, features=Type of features, about=Very good car)
+11:26:39.599  INFO  tests.TestBase - Attach photo --> /Users/tayahatum/Qa32/Qa32_IlCarro/auto2.jpeg

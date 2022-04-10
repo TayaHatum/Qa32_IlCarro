@@ -10,13 +10,17 @@ public class AddNewCarTests extends TestBase {
     @BeforeMethod
     public void preCondition() {
         if(!app.user().isLogOutPresent()){
-            app.user().login(new User().withEmail("noa@gmail.com").withPassword("Nnoa12345$"));
+            User user = new User().withEmail("noa@gmail.com").withPassword("Nnoa12345$");
+            app.user().login(user);
+            logger.info("Test start with user -->  " + user.toString());
         }
     }
 
     @Test
     public void addNewCarSuccess() {
         int index = (int) (System.currentTimeMillis() / 1000) % 36000;
+        logger.info(" 'Car Reg number' 100-22" +index);
+
 
         Car car = Car.builder()
                 .address("Tel Aviv, Israel")
@@ -37,10 +41,12 @@ public class AddNewCarTests extends TestBase {
                 .features("Type of features")
                 .about("Very good car")
                 .build();
+        logger.info("Add car --->" + car.toString());
 
         app.car().openCarForm();
         app.car().fillCarForm(car);
         app.car().attachPhoto("/Users/tayahatum/Qa32/Qa32_IlCarro/auto2.jpeg");
+        logger.info("Attach photo --> /Users/tayahatum/Qa32/Qa32_IlCarro/auto2.jpeg" );
         app.car().submit();
 
         Assert.assertTrue(app.car().isCarAdded());

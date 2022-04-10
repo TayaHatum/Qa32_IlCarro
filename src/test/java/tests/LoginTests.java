@@ -19,13 +19,17 @@ public class LoginTests extends TestBase{
 
     @Test
     public void loginSuccess(){
+        logger.info("Start test LoginSuccess");
         logger.info("The test starts with data [noa@gmail.com] & [Nnoa12345$]" );
 
         app.user().openLoginForm();
+        logger.info("opened form");
         app.user().fillLoginForm("noa@gmail.com","Nnoa12345$");
+        logger.info("fill form");
         app.user().submit();
         app.user().pause(1000);
         Assert.assertEquals(app.user().checkMessage(),"Logged in success");
+        logger.info("Test passed");
 
     }
 

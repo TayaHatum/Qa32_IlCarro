@@ -1,0 +1,7 @@
+11:20:33.229  INFO  manager.ApplicationManager - All tests start in ChromeDriver
+11:20:33.319  INFO  manager.ApplicationManager - All tests start in 'ChromeDriver'
+11:20:38.747  INFO  tests.TestBase - Start test --->public void tests.LoginTests.loginSuccess()
+11:20:43.796  INFO  tests.TestBase - Start test LoginSuccess
+11:20:43.796  INFO  tests.TestBase - The test starts with data [noa@gmail.com] & [Nnoa12345$]
+11:20:43.945  INFO  tests.TestBase - opened form
+11:20:46.320  INFO  tests.TestBase - Test passed
