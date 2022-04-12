@@ -58,7 +58,7 @@ public class RegistrationTests extends TestBase {
                 .withEmail("lalin@gmail.com")
                 .withPassword("12345");
 
-
+logger.info("New user --> " +user.toString());
         app.user().openRegistrationForm();
         app.user().fillRegistrationForm(user);
         app.user().checkPolicy();
