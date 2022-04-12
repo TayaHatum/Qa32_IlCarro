@@ -1,0 +1,24 @@
+16:36:35.614  INFO  manager.ApplicationManager - All tests start in ChromeDriver
+16:36:35.617  INFO  manager.ApplicationManager - All tests start in 'ChromeDriver'
+16:36:37.117  INFO  tests.TestBase - Start test --->public void tests.AddNewCarTests.addNewCarSuccess()
+16:36:43.440  INFO  tests.TestBase - Test start with user -->  User{name='null', lastName='null', email='noa@gmail.com', password='Nnoa12345$', phone='null'}
+16:36:43.442  INFO  tests.TestBase -  'Car Reg number' 100-2234603
+16:36:43.445  INFO  tests.TestBase - Add car --->Car(address=Tel Aviv, Israel, make=BMW, model=M5, year=2022, engine=2.5, fuel=Petrol, gear=MT, wD=AWD, doors=5, seats=4, clasS=C, fuelConsumption=6.5, carRegNumber=100-22-34603, price=65, distanceIncluded=500, features=Type of features, about=Very good car)
+16:36:48.146  INFO  tests.TestBase - Attach photo --> /Users/tayahatum/Qa32/Qa32_IlCarro/auto2.jpeg
+16:36:51.298  INFO  tests.TestBase - Start test --->public void tests.LoginTests.loginSuccess()
+16:36:51.489  INFO  tests.TestBase - Test needs logout
+16:36:51.490  INFO  tests.TestBase - Start test LoginSuccess
+16:36:51.490  INFO  tests.TestBase - The test starts with data [noa@gmail.com] & [Nnoa12345$]
+16:36:51.572  INFO  tests.TestBase - opened form
+16:36:51.914  INFO  tests.TestBase - fill form
+16:36:53.062  INFO  tests.TestBase - Test passed
+16:36:53.124  INFO  tests.TestBase - Start test --->public void tests.LoginTests.loginSuccessModel()
+16:36:53.239  INFO  tests.TestBase - Test needs logout
+16:36:54.910  INFO  tests.TestBase - Start test --->public void tests.LoginTests.loginSuccessNew()
+16:36:55.066  INFO  tests.TestBase - Test needs logout
+16:36:56.779  INFO  tests.TestBase - Start test --->public void tests.RegistrationTests.registrationSuccess()
+16:36:58.870  INFO  tests.TestBase - Start test --->public void tests.RegistrationTests.registrationSuccessModel()
+16:37:00.741  INFO  tests.TestBase - Start test --->public void tests.RegistrationTests.registrationWrongPasswordModel()
+16:37:06.783  INFO  tests.TestBase - Start test --->public void tests.SearchTests.searchAnyPeriod()
+16:37:14.250  INFO  tests.TestBase - Start test --->public void tests.SearchTests.searchCurrentMonth()
+16:37:17.733  INFO  tests.TestBase - Start test --->public void tests.SearchTests.searchPeriodInPast()

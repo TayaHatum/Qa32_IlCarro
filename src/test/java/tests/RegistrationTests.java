@@ -62,7 +62,7 @@ public class RegistrationTests extends TestBase {
         app.user().openRegistrationForm();
         app.user().fillRegistrationForm(user);
         app.user().checkPolicy();
-        app.user().submit();
+
         // error + button not active
         Assert.assertTrue(app.user().isErrorPasswordDisplayedSize());
         Assert.assertTrue(app.user().isErrorPasswordDisplayedFormat());

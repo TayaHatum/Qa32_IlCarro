@@ -1,0 +1,5 @@
+16:32:51.985  INFO  manager.ApplicationManager - All tests start in ChromeDriver
+16:32:52.014  INFO  manager.ApplicationManager - All tests start in 'ChromeDriver'
+16:32:53.900  INFO  tests.TestBase - Start test --->public void tests.RegistrationTests.registrationSuccess()
+16:33:01.102  INFO  tests.TestBase - Start test --->public void tests.RegistrationTests.registrationSuccessModel()
+16:33:02.880  INFO  tests.TestBase - Start test --->public void tests.RegistrationTests.registrationWrongPasswordModel()

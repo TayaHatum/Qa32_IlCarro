@@ -1,0 +1,5 @@
+16:36:08.332  INFO  manager.ApplicationManager - All tests start in ChromeDriver
+16:36:08.342  INFO  manager.ApplicationManager - All tests start in 'ChromeDriver'
+16:36:09.912  INFO  tests.TestBase - Start test --->public void tests.SearchTests.searchAnyPeriod()
+16:36:14.343  INFO  tests.TestBase - Start test --->public void tests.SearchTests.searchCurrentMonth()
+16:36:17.646  INFO  tests.TestBase - Start test --->public void tests.SearchTests.searchPeriodInPast()

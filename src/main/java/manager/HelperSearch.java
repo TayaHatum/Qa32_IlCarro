@@ -20,6 +20,7 @@ public class HelperSearch extends HelperBase{
     }
 
     private void typeCity(String city) {
+        pause(1000);
         type(By.id("city"),city);
         click(By.cssSelector(".pac-item"));
 
@@ -167,5 +168,10 @@ WebElement el = wd.findElement(By.id("dates"));
     public void returnToHomePage() {
         pause(2000);
         click(By.cssSelector(".header a[href='/']"));
+    }
+
+    public boolean isListOfCarsAppeared() {
+
+        return isElementPresent(By.cssSelector(".cars-container"));
     }
 }
