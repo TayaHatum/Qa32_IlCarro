@@ -19,7 +19,7 @@ public class ApplicationManager {
     public void init() {
         wd = new ChromeDriver();
         logger.info("All tests start in ChromeDriver");
-        logger.info("All tests start in 'ChromeDriver'");
+
 
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

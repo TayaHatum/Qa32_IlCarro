@@ -1,5 +1,6 @@
 package tests;
 
+import manager.MyDataProvider;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -44,12 +45,23 @@ public class LoginTests extends TestBase{
         Assert.assertEquals(app.user().checkMessage(),"Logged in success");
 
     }
-
-    @Test
-    public void loginSuccessNew(){
+    @Test (dataProvider = "dataLoginCSV",dataProviderClass = MyDataProvider.class)
+    public void loginSuccessModelCSV(User user){
+        logger.info("Test start with user -->" +user.toString());
 
         app.user().openLoginForm();
-        app.user().fillLoginForm("noa@gmail.com","Nnoa12345$");
+        app.user().fillLoginForm(user);
+        app.user().submit();
+        app.user().pause(1000);
+        Assert.assertEquals(app.user().checkMessage(),"Logged in success");
+
+    }
+
+    @Test (dataProvider = "dataLogin",dataProviderClass = MyDataProvider.class)
+    public void loginSuccessNew(String email,String password){
+
+        app.user().openLoginForm();
+        app.user().fillLoginForm(email,password);
         app.user().submit();
         app.user().pause(1000);
         Assert.assertEquals(app.user().checkMessage(),"Logged in success");

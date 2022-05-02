@@ -1,0 +1,7 @@
+13:26:03.670  INFO  manager.ApplicationManager - All tests start in ChromeDriver
+13:26:03.772  INFO  manager.ApplicationManager - All tests start in 'ChromeDriver'
+13:26:05.445  INFO  tests.TestBase - Start test --->loginSuccessNew
+13:26:12.385  INFO  tests.TestBase - Start test --->loginSuccessNew
+13:26:12.788  INFO  tests.TestBase - Test needs logout
+13:26:14.543  INFO  tests.TestBase - Start test --->loginSuccessNew
+13:26:14.652  INFO  tests.TestBase - Test needs logout

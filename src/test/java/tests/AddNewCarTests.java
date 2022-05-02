@@ -1,5 +1,6 @@
 package tests;
 
+import manager.MyDataProvider;
 import models.Car;
 import models.User;
 import org.testng.Assert;
@@ -41,6 +42,26 @@ public class AddNewCarTests extends TestBase {
                 .features("Type of features")
                 .about("Very good car")
                 .build();
+        logger.info("Add car --->" + car.toString());
+
+        app.car().openCarForm();
+        app.car().fillCarForm(car);
+        app.car().attachPhoto("/Users/tayahatum/Qa32/Qa32_IlCarro/auto2.jpeg");
+        logger.info("Attach photo --> /Users/tayahatum/Qa32/Qa32_IlCarro/auto2.jpeg" );
+        app.car().submit();
+
+        Assert.assertTrue(app.car().isCarAdded());
+
+
+    }
+
+    @Test (dataProvider="validDataCar",dataProviderClass = MyDataProvider.class)
+    public void addNewCarSuccessCSV(Car car) {
+        int index = (int) (System.currentTimeMillis() / 1000) % 36000;
+        car.setCarRegNumber("200-200-"+index);
+        logger.info(" 'Car Reg number' is -->" +car.getCarRegNumber());
+
+
         logger.info("Add car --->" + car.toString());
 
         app.car().openCarForm();

@@ -1,0 +1,9 @@
+15:02:42.525  INFO  manager.ApplicationManager - All tests start in ChromeDriver
+15:02:45.504  INFO  tests.TestBase - Start test --->loginSuccessModelCSV
+15:02:50.574  INFO  tests.TestBase - Test start with user -->User{name='null', lastName='null', email='noa@gmail.com', password='Nnoa12345$', phone='null'}
+15:02:52.455  INFO  tests.TestBase - Start test --->loginSuccessModelCSV
+15:02:52.568  INFO  tests.TestBase - Test needs logout
+15:02:52.569  INFO  tests.TestBase - Test start with user -->User{name='null', lastName='null', email='sonya@gmail.com', password='Ss12345$', phone='null'}
+15:02:54.325  INFO  tests.TestBase - Start test --->loginSuccessModelCSV
+15:02:54.428  INFO  tests.TestBase - Test needs logout
+15:02:54.429  INFO  tests.TestBase - Test start with user -->User{name='null', lastName='null', email='noa@gmail.com', password='Nnoa12345$', phone='null'}

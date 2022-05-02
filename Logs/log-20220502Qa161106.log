@@ -1,0 +1,44 @@
+16:11:06.977  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] 2045031788
+16:11:06.982  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+16:11:06.986  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+16:11:06.987  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+16:11:06.987  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+16:11:06.988  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.tearDown()[pri:0, instance:null] -475375085
+16:11:06.989  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+16:11:06.989  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+16:11:06.989  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+16:11:06.989  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+16:11:06.998  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE AddNewCarTests.preCondition()[pri:0, instance:null] -263876288
+16:11:06.999  DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR AddNewCarTests.preCondition()[pri:0, instance:null] ==> TestBase.startLogger(java.lang.reflect.Method)[pri:0, instance:null]
+16:11:07.000  DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.startLogger(java.lang.reflect.Method)[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+16:11:07.000  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.startLogger(java.lang.reflect.Method)[pri:0, instance:null] -68692127
+16:11:07.000  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+16:11:07.000  DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR AddNewCarTests.preCondition()[pri:0, instance:null] ==> TestBase.startLogger(java.lang.reflect.Method)[pri:0, instance:null]
+16:11:07.002  DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.startLogger(java.lang.reflect.Method)[pri:0, instance:null] FROM NODE AddNewCarTests.preCondition()[pri:0, instance:null]
+16:11:07.002  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+16:11:07.002  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+16:11:07.002  DEBUG org.testng.internal.Graph - [Graph]               TestBase.startLogger(java.lang.reflect.Method)[pri:0, instance:null]
+16:11:07.002  DEBUG org.testng.internal.Graph - [Graph]               AddNewCarTests.preCondition()[pri:0, instance:null]
+16:11:07.003  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+16:11:07.005  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:tests.AddNewCarTests@41f7c9e7] 78234107
+16:11:07.005  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+16:11:07.005  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+16:11:07.006  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+16:11:07.006  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+16:11:07.007  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE AddNewCarTests.addNewCarSuccessCSV(models.Car)[pri:0, instance:tests.AddNewCarTests@41f7c9e7] -622059673
+16:11:07.007  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE AddNewCarTests.addNewCarSuccess()[pri:0, instance:tests.AddNewCarTests@41f7c9e7] 192991185
+16:11:07.007  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+16:11:07.008  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+16:11:07.008  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+16:11:07.008  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+16:11:07.010  DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.tearDown()[pri:0, instance:tests.AddNewCarTests@41f7c9e7] -744967628
+16:11:07.010  DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+16:11:07.010  DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+16:11:07.010  DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+16:11:07.010  DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+16:11:09.610  INFO  manager.ApplicationManager - All tests start in ChromeDriver
+16:11:11.298  INFO  tests.TestBase - Start test --->addNewCarSuccessCSV
+16:11:18.006  INFO  tests.TestBase - Test start with user -->  User{name='null', lastName='null', email='noa@gmail.com', password='Nnoa12345$', phone='null'}
+16:11:18.009  INFO  tests.TestBase -  'Car Reg number' is -->200-200-33078
+16:11:18.009  INFO  tests.TestBase - Add car --->Car(address=Tel Aviv, Israel, make=BMW, model=M5, year=2022, engine=2.5, fuel=Petrol, gear=MT, wD=AWD, doors=5, seats=4, clasS=C, fuelConsumption=6.5, carRegNumber=200-200-33078, price=65, distanceIncluded=500, features=Type of features, about=Very good car)
+16:11:22.976  INFO  tests.TestBase - Attach photo --> /Users/tayahatum/Qa32/Qa32_IlCarro/auto2.jpeg
