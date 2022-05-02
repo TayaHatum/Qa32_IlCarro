@@ -71,25 +71,7 @@ public class MyDataProvider {
                     .build()});
             line = reader.readLine(); }
 
-//        list.add(new Object[]{ Car.builder()
-//                .address("Tel Aviv, Israel")
-//                .make("BMW")
-//                .model("M5")
-//                .year("2022")
-//                .engine("2.5")
-//                .fuel("Petrol")
-//                .gear("MT")
-//                .wD("AWD")
-//                .doors("5")
-//                .seats("4")
-//                .clasS("C")
-//                .fuelConsumption("6.5")
-//                .carRegNumber("100-22-2333")
-//                .price("65")
-//                .distanceIncluded("500")
-//                .features("Type of features")
-//                .about("Very good car")
-//                .build()});
+
 
         return list.iterator();
     }
